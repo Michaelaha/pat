@@ -1,0 +1,24 @@
+//
+//  main.c
+//  C project
+//
+//  Created by macbook on 2018/3/11.
+//  Copyright © 2018年 xsj. All rights reserved.
+//害死人不偿命的(3n+1)猜想
+
+#include <stdio.h>
+int main() {
+    int n,i=0;
+    scanf("%d",&n);
+    while(n!=1){
+        ++i;
+        if(n%2!=0){
+            n=(3*n+1)/2;
+                }
+        else{
+            n=n/2;
+        }
+    }
+    printf("%d\n",i);
+    return 0;
+}
